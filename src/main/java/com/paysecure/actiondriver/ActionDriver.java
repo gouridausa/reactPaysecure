@@ -179,6 +179,41 @@ public class ActionDriver {
 	    }
 	}
 	
+	public boolean isMultiple(By by) {
+	    String elementDescription = getElementDescription(by);
+	    try {
+	        // Wait for element to be visible before checking
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+
+	        // Create Select instance
+	        Select select = new Select(element);
+	        boolean isMultiple = select.isMultiple();
+
+	        // Apply green border for visible element
+	        applyBorder(by, "green");
+
+	        // Logging
+	        if (isMultiple) {
+	            log.info("Dropdown supports multiple selection: " + elementDescription);
+	            ExtentManager.logStep("Dropdown supports multiple selection: " + elementDescription);
+	            ExtentManager.logStepWithScreenshot(baseClass.getDriver(), "Dropdown is multiple:", "Dropdown supports multiple selection: " + elementDescription);
+	        } else {
+	            log.info("Dropdown does NOT support multiple selection: " + elementDescription);
+	            ExtentManager.logStep("Dropdown does NOT support multiple selection: " + elementDescription);
+	            ExtentManager.logStepWithScreenshot(baseClass.getDriver(), "Dropdown is single select:", "Dropdown does NOT support multiple selection: " + elementDescription);
+	        }
+
+	        return isMultiple;
+
+	    } catch (Exception e) {
+	        applyBorder(by, "red");
+	        log.error("Unable to check if dropdown is multiple: " + e.getMessage(), e);
+	        ExtentManager.logFailure(baseClass.getDriver(), "Unable to check dropdown type:", "Dropdown check failed for: " + elementDescription);
+	        return false;
+	    }
+	}
+
 	
 	//is enabled method
 	public boolean isEnabled(By by) {
