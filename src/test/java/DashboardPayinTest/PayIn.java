@@ -138,14 +138,37 @@ public class PayIn extends baseClass {
 	}
 	
 	@Test
-	public void handleDatePicker() {
+	public void handleDatePicker() throws InterruptedException {
 	//	dp.handleDatePicker();
 	//	dp.verifyAllDropdownIsMultiselectable();
 	//
 		dp.verifyStartFromAndEndFromDropdown();
-		dp.selectStartAndEndTime("00", "01", "22", "57");
 	    dp.selectCustomDateRange();
 	}
+	
+	//--------------------------------Analytics----------------------------
+	
+	@Test
+	public void verifyChartsOnAnalytics() throws InterruptedException {
+		dp.openChartofAnalytics();
+		dp.checkCancelAndSaveButtonAfterClickOnAddToCartButton();
+		dp.verifyClickOnTheCancelButtonAndCheck();
+		dp.checkBrandnameIsBydefaultSelected();
+		dp.removeChartFromAnalytics();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 

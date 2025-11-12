@@ -83,4 +83,21 @@ public class DashboardPayinLocators {
     public static final String endTimeTo="(//select[@class='sc-jDJeIs jqTIdZ'])[4]";
     
     
+    //Analytics
+    public static final String addTochart="//span[text()='Add a chart']";
+    public static final String cancelOnAnalytics="(//span[text()='Cancel'])[2]";
+    public static final String saveOnAnalytics="//span[text()='Save']";
+    
+    //group by - Analytics 
+    public static final String groupByBrandname="(//span[text()='Group By Brand Name'])[1]";
+    public static final String groupByPSP="(//button[contains(@id,'dropdown')])[3]";
+    public static final String groupByTrustScore="//span[text()='Group By Trust Score']";
+    public static final String removeChartButton="//button[contains(@class,'sc-ezERC')]";
+    
+    
+    
+    
+    
+    
+    
 }

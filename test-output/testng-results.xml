@@ -11,110 +11,50 @@
       <![CDATA[Click on submit button in login page]]>
     </line>
     <line>
-      <![CDATA[User clicked on the Date Picker field.]]>
+      <![CDATA[Scrolled to 'Add to Chart' button]]>
     </line>
     <line>
-      <![CDATA[===== Verifying all dropdown options for Start Time and End Time =====]]>
+      <![CDATA[Clicked on 'Add to Chart' button]]>
     </line>
     <line>
-      <![CDATA[Start Time From dropdown contains '21': false]]>
+      <![CDATA['Cancel' and 'Save' buttons are displayed after clicking 'Add to Chart']]>
     </line>
     <line>
-      <![CDATA[Total options in Start Time From dropdown: 0]]>
+      <![CDATA[Clicked on 'Cancel' button in Analytics]]>
     </line>
     <line>
-      <![CDATA[All Start Time From dropdown options: []]]>
+      <![CDATA[Scrolled to 'Add to Chart' button]]>
     </line>
     <line>
-      <![CDATA[Start Time To dropdown contains '21': false]]>
+      <![CDATA[Clicked on 'Add to Chart' button]]>
     </line>
     <line>
-      <![CDATA[Total options in Start Time To dropdown: 0]]>
+      <![CDATA[Reopened the Analytics chart after cancel action]]>
     </line>
     <line>
-      <![CDATA[All Start Time To dropdown options: []]]>
+      <![CDATA[Clicked on 'Save' button in Analytics]]>
     </line>
     <line>
-      <![CDATA[End Time From dropdown contains '21': false]]>
+      <![CDATA[Checking if 'Group by Brandname' is displayed by default: true]]>
     </line>
     <line>
-      <![CDATA[Total options in End Time From dropdown: 0]]>
-    </line>
-    <line>
-      <![CDATA[All End Time From dropdown options: []]]>
-    </line>
-    <line>
-      <![CDATA[End Time To dropdown contains '21': false]]>
-    </line>
-    <line>
-      <![CDATA[Total options in End Time To dropdown: 0]]>
-    </line>
-    <line>
-      <![CDATA[All End Time To dropdown options: []]]>
-    </line>
-    <line>
-      <![CDATA[===== Dropdown verification completed successfully =====]]>
-    </line>
-    <line>
-      <![CDATA[===== Selecting Start and End Time from dropdowns =====]]>
-    </line>
-    <line>
-      <![CDATA[User clicked on the Date Picker field.]]>
-    </line>
-    <line>
-      <![CDATA[User selected 'Start Time From' as: 00]]>
-    </line>
-    <line>
-      <![CDATA[User selected 'Start Time To' as: 01]]>
-    </line>
-    <line>
-      <![CDATA[User selected 'End Time From' as: 22]]>
-    </line>
-    <line>
-      <![CDATA[User selected 'End Time To' as: 57]]>
-    </line>
-    <line>
-      <![CDATA[===== Successfully selected all Start and End Time dropdown values =====]]>
-    </line>
-    <line>
-      <![CDATA[User is selecting a custom date range.]]>
-    </line>
-    <line>
-      <![CDATA[Captured 'From Date' before applying range: ]]>
-    </line>
-    <line>
-      <![CDATA[User clicked on the 'From Date' field.]]>
-    </line>
-    <line>
-      <![CDATA[Captured 'To Date' before applying range: ]]>
-    </line>
-    <line>
-      <![CDATA[User clicked on the 'To Date' field.]]>
-    </line>
-    <line>
-      <![CDATA[User clicked on the 'Apply' button to apply the selected date range.]]>
-    </line>
-    <line>
-      <![CDATA[Displayed 'Applied Date' after applying range: ]]>
-    </line>
-    <line>
-      <![CDATA[PASS: Applied date range includes both 'From Date' () and 'To Date' ().]]>
+      <![CDATA['Group by Brandname' is selected by default]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-11-07T17:11:05 IST" name="Default suite" finished-at="2025-11-07T17:28:04 IST" duration-ms="1019301">
+  <suite started-at="2025-11-11T18:22:58 IST" name="Default suite" finished-at="2025-11-11T18:23:56 IST" duration-ms="57821">
     <groups>
     </groups>
-    <test started-at="2025-11-07T17:11:05 IST" name="Default test" finished-at="2025-11-07T17:28:04 IST" duration-ms="1019301">
+    <test started-at="2025-11-11T18:22:58 IST" name="Default test" finished-at="2025-11-11T18:23:56 IST" duration-ms="57821">
       <class name="DashboardPayinTest.PayIn">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:DashboardPayinTest.PayIn@4a9f80d3]" started-at="2025-11-07T17:11:05 IST" name="loadConfig" finished-at="2025-11-07T17:11:05 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:22:58 IST" name="loadConfig" finished-at="2025-11-11T18:22:58 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:DashboardPayinTest.PayIn@4a9f80d3]" started-at="2025-11-07T17:11:05 IST" name="setup" finished-at="2025-11-07T17:11:13 IST" duration-ms="7312" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:22:58 IST" name="setup" finished-at="2025-11-11T18:23:07 IST" duration-ms="9540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeInvokeBrowser()[pri:0, instance:DashboardPayinTest.PayIn@4a9f80d3]" started-at="2025-11-07T17:11:13 IST" name="beforeInvokeBrowser" finished-at="2025-11-07T17:11:16 IST" duration-ms="2975" status="PASS">
+        <test-method is-config="true" signature="beforeInvokeBrowser()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:23:07 IST" name="beforeInvokeBrowser" finished-at="2025-11-11T18:23:14 IST" duration-ms="6299" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User enter ID in Username field]]>
@@ -127,105 +67,45 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeInvokeBrowser -->
-        <test-method signature="handleDatePicker()[pri:0, instance:DashboardPayinTest.PayIn@4a9f80d3]" started-at="2025-11-07T17:11:16 IST" name="handleDatePicker" finished-at="2025-11-07T17:28:01 IST" duration-ms="1005841" status="PASS">
+        <test-method signature="verifyChartsOnAnalytics()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:23:14 IST" name="verifyChartsOnAnalytics" finished-at="2025-11-11T18:23:52 IST" duration-ms="38691" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[User clicked on the Date Picker field.]]>
+              <![CDATA[Scrolled to 'Add to Chart' button]]>
             </line>
             <line>
-              <![CDATA[===== Verifying all dropdown options for Start Time and End Time =====]]>
+              <![CDATA[Clicked on 'Add to Chart' button]]>
             </line>
             <line>
-              <![CDATA[Start Time From dropdown contains '21': false]]>
+              <![CDATA['Cancel' and 'Save' buttons are displayed after clicking 'Add to Chart']]>
             </line>
             <line>
-              <![CDATA[Total options in Start Time From dropdown: 0]]>
+              <![CDATA[Clicked on 'Cancel' button in Analytics]]>
             </line>
             <line>
-              <![CDATA[All Start Time From dropdown options: []]]>
+              <![CDATA[Scrolled to 'Add to Chart' button]]>
             </line>
             <line>
-              <![CDATA[Start Time To dropdown contains '21': false]]>
+              <![CDATA[Clicked on 'Add to Chart' button]]>
             </line>
             <line>
-              <![CDATA[Total options in Start Time To dropdown: 0]]>
+              <![CDATA[Reopened the Analytics chart after cancel action]]>
             </line>
             <line>
-              <![CDATA[All Start Time To dropdown options: []]]>
+              <![CDATA[Clicked on 'Save' button in Analytics]]>
             </line>
             <line>
-              <![CDATA[End Time From dropdown contains '21': false]]>
+              <![CDATA[Checking if 'Group by Brandname' is displayed by default: true]]>
             </line>
             <line>
-              <![CDATA[Total options in End Time From dropdown: 0]]>
-            </line>
-            <line>
-              <![CDATA[All End Time From dropdown options: []]]>
-            </line>
-            <line>
-              <![CDATA[End Time To dropdown contains '21': false]]>
-            </line>
-            <line>
-              <![CDATA[Total options in End Time To dropdown: 0]]>
-            </line>
-            <line>
-              <![CDATA[All End Time To dropdown options: []]]>
-            </line>
-            <line>
-              <![CDATA[===== Dropdown verification completed successfully =====]]>
-            </line>
-            <line>
-              <![CDATA[===== Selecting Start and End Time from dropdowns =====]]>
-            </line>
-            <line>
-              <![CDATA[User clicked on the Date Picker field.]]>
-            </line>
-            <line>
-              <![CDATA[User selected 'Start Time From' as: 00]]>
-            </line>
-            <line>
-              <![CDATA[User selected 'Start Time To' as: 01]]>
-            </line>
-            <line>
-              <![CDATA[User selected 'End Time From' as: 22]]>
-            </line>
-            <line>
-              <![CDATA[User selected 'End Time To' as: 57]]>
-            </line>
-            <line>
-              <![CDATA[===== Successfully selected all Start and End Time dropdown values =====]]>
-            </line>
-            <line>
-              <![CDATA[User is selecting a custom date range.]]>
-            </line>
-            <line>
-              <![CDATA[Captured 'From Date' before applying range: ]]>
-            </line>
-            <line>
-              <![CDATA[User clicked on the 'From Date' field.]]>
-            </line>
-            <line>
-              <![CDATA[Captured 'To Date' before applying range: ]]>
-            </line>
-            <line>
-              <![CDATA[User clicked on the 'To Date' field.]]>
-            </line>
-            <line>
-              <![CDATA[User clicked on the 'Apply' button to apply the selected date range.]]>
-            </line>
-            <line>
-              <![CDATA[Displayed 'Applied Date' after applying range: ]]>
-            </line>
-            <line>
-              <![CDATA[PASS: Applied date range includes both 'From Date' () and 'To Date' ().]]>
+              <![CDATA['Group by Brandname' is selected by default]]>
             </line>
           </reporter-output>
-        </test-method> <!-- handleDatePicker -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:DashboardPayinTest.PayIn@4a9f80d3]" started-at="2025-11-07T17:28:01 IST" name="tearDown" finished-at="2025-11-07T17:28:04 IST" duration-ms="3016" status="PASS">
+        </test-method> <!-- verifyChartsOnAnalytics -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:23:52 IST" name="tearDown" finished-at="2025-11-11T18:23:56 IST" duration-ms="3016" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=handleDatePicker status=SUCCESS method=PayIn.handleDatePicker()[pri:0, instance:DashboardPayinTest.PayIn@4a9f80d3] output=User clicked on the Date Picker field.]]]>
+                <![CDATA[[TestResult name=verifyChartsOnAnalytics status=SUCCESS method=PayIn.verifyChartsOnAnalytics()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e] output=Scrolled to 'Add to Chart' button]]]>
               </value>
             </param>
           </params>

@@ -96,6 +96,16 @@ public class DashboardPayin {
 	private By endTimeFrom=By.xpath(DashboardPayinLocators.endTimeFrom);
 	private By endTimeTo=By.xpath(DashboardPayinLocators.endTimeTo);
 	
+	//Analytics
+	private By addTochart=By.xpath(DashboardPayinLocators.addTochart);
+	private By cancelOnAnalytics=By.xpath(DashboardPayinLocators.cancelOnAnalytics);
+	private By saveOnAnalytics=By.xpath(DashboardPayinLocators.saveOnAnalytics);
+	
+	private By groupByBrandname=By.xpath(DashboardPayinLocators.groupByBrandname);
+	private By groupByPSP=By.xpath(DashboardPayinLocators.groupByPSP);
+	private By groupByTrustScore=By.xpath(DashboardPayinLocators.groupByTrustScore);
+	private By removeChartButton=By.xpath(DashboardPayinLocators.removeChartButton);
+	
 	
 	@FindBy(xpath="//div[@class='sc-kaCbt kECrGG']/label")private List<WebElement> totalInsights;
 	@FindBy(xpath="//label[@class='sc-gByRMG dsMAuj']")private List<WebElement>  unselectedInsights;
@@ -758,23 +768,24 @@ public class DashboardPayin {
 
 	    Reporter.log("===== Dropdown verification completed successfully =====", true);
 	}
-	public void selectStartAndEndTime(String starttimeFrom, String starttimeTo, String endtimeFrom, String endtimeTo) {
+	public void selectStartAndEndTime(String starttimeFrom, String starttimeTo, String endtimeFrom, String endtimeTo) throws InterruptedException {
 	    Reporter.log("===== Selecting Start and End Time from dropdowns =====", true);
 
 	    actionDriver.clickUsingJS(datePicker);
 	    Reporter.log("User clicked on the Date Picker field.", true);
 	    // Select Start Time From
+	    Thread.sleep(2500);
 	    actionDriver.selectByVisibleText(startTimeFrom, starttimeFrom);
 	    Reporter.log("User selected 'Start Time From' as: " + starttimeFrom, true);
-
+	    Thread.sleep(2500);
 	    // Select Start Time To
 	    actionDriver.selectByVisibleText(startTimeTo, starttimeTo);
 	    Reporter.log("User selected 'Start Time To' as: " + starttimeTo, true);
-
+	    Thread.sleep(2500);
 	    // Select End Time From
 	    actionDriver.selectByVisibleText(endTimeFrom, endtimeFrom);
 	    Reporter.log("User selected 'End Time From' as: " + endtimeFrom, true);
-
+	    Thread.sleep(2500);
 	    // Select End Time To
 	    actionDriver.selectByVisibleText(endTimeTo, endtimeTo);
 	    Reporter.log("User selected 'End Time To' as: " + endtimeTo, true);
@@ -782,8 +793,54 @@ public class DashboardPayin {
 	    Reporter.log("===== Successfully selected all Start and End Time dropdown values =====", true);
 	}
 
+	public void openChartofAnalytics() {
+	    actionDriver.scrollToElement(addTochart);
+	    Reporter.log("Scrolled to 'Add to Chart' button", true);
 
+	    actionDriver.clickUsingJS(addTochart);
+	    Reporter.log("Clicked on 'Add to Chart' button", true);
+	}
+
+	public void checkCancelAndSaveButtonAfterClickOnAddToCartButton() {
+	    boolean isCancelDisplayed = actionDriver.isDisplayed(cancelOnAnalytics);
+	    boolean isSaveDisplayed = actionDriver.isDisplayed(saveOnAnalytics);
+
+	    if (isCancelDisplayed && isSaveDisplayed) {
+	        Reporter.log("'Cancel' and 'Save' buttons are displayed after clicking 'Add to Chart'", true);
+	    } else {
+	        Reporter.log("'Cancel' and 'Save' buttons are not displayed after clicking 'Add to Chart'", true);
+	    }
+	}
+
+	public void verifyClickOnTheCancelButtonAndCheck() {
+	    actionDriver.click(cancelOnAnalytics);
+	    Reporter.log("Clicked on 'Cancel' button in Analytics", true);
+
+	    openChartofAnalytics();
+	    Reporter.log("Reopened the Analytics chart after cancel action", true);
+
+	    actionDriver.clickUsingJS(saveOnAnalytics);
+	    Reporter.log("Clicked on 'Save' button in Analytics", true);
+	}
 
 	
+	public void checkBrandnameIsBydefaultSelected() throws InterruptedException {
+		actionDriver.scrollToElement(groupByBrandname);
+		Thread.sleep(2000);
+	    boolean gpByBrandname = actionDriver.isDisplayed(groupByBrandname);
 
-}
+	    Reporter.log("Checking if 'Group by Brandname' is displayed by default: " + gpByBrandname, true);
+	    System.out.println("Group by Brandname default visibility: " + gpByBrandname);
+
+	    Assert.assertTrue(gpByBrandname, "Group by brandname is not selected by default!!!");
+	    Reporter.log("'Group by Brandname' is selected by default", true);
+	}
+
+	public void removeChartFromAnalytics() {
+		actionDriver.scrollToElement(removeChartButton);
+		actionDriver.clickUsingJS(removeChartButton);
+	}
+
+	
+	
+    }

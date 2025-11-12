@@ -8,8 +8,8 @@
           <include name="loadConfig"/>
           <include name="beforeInvokeBrowser"/>
           <include name="tearDown"/>
+          <include name="verifyChartsOnAnalytics"/>
           <include name="setup"/>
-          <include name="handleDatePicker"/>
         </methods>
       </class> <!-- DashboardPayinTest.PayIn -->
     </classes>
