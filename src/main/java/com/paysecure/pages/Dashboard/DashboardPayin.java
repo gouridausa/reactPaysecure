@@ -102,9 +102,15 @@ public class DashboardPayin {
 	private By saveOnAnalytics=By.xpath(DashboardPayinLocators.saveOnAnalytics);
 	
 	private By groupByBrandname=By.xpath(DashboardPayinLocators.groupByBrandname);
+	private By grpByBrndName=By.xpath(DashboardPayinLocators.grpByBrndName);
 	private By groupByPSP=By.xpath(DashboardPayinLocators.groupByPSP);
 	private By groupByTrustScore=By.xpath(DashboardPayinLocators.groupByTrustScore);
 	private By removeChartButton=By.xpath(DashboardPayinLocators.removeChartButton);
+	private By removeChart=By.xpath(DashboardPayinLocators.removeChart);
+	private By cancelRemoveChart=By.xpath(DashboardPayinLocators.cancelRemoveChart);
+	private By confirmRemoveChart=By.xpath(DashboardPayinLocators.confirmRemoveChart);
+	
+
 	
 	
 	@FindBy(xpath="//div[@class='sc-kaCbt kECrGG']/label")private List<WebElement> totalInsights;
@@ -825,6 +831,7 @@ public class DashboardPayin {
 
 	
 	public void checkBrandnameIsBydefaultSelected() throws InterruptedException {
+		Thread.sleep(2000);
 		actionDriver.scrollToElement(groupByBrandname);
 		Thread.sleep(2000);
 	    boolean gpByBrandname = actionDriver.isDisplayed(groupByBrandname);
@@ -836,11 +843,21 @@ public class DashboardPayin {
 	    Reporter.log("'Group by Brandname' is selected by default", true);
 	}
 
-	public void removeChartFromAnalytics() {
+	
+	public void removeChartFromAnalytics() throws InterruptedException {
 		actionDriver.scrollToElement(removeChartButton);
+		actionDriver.clickUsingJS(removeChartButton);
+		actionDriver.clickUsingJS(removeChart);
+		Thread.sleep(2000);
 		actionDriver.clickUsingJS(removeChartButton);
 	}
 
-	
+	public void handleGroupByDropdown() throws InterruptedException {
+		actionDriver.clickUsingJS(groupByBrandname);
+		Thread.sleep(2000);
+		actionDriver.clickUsingJS(groupByPSP);
+		
+		
+	}
 	
     }

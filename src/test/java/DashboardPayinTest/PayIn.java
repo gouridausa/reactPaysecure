@@ -154,6 +154,7 @@ public class PayIn extends baseClass {
 		dp.checkCancelAndSaveButtonAfterClickOnAddToCartButton();
 		dp.verifyClickOnTheCancelButtonAndCheck();
 		dp.checkBrandnameIsBydefaultSelected();
+		dp.handleGroupByDropdown();
 		dp.removeChartFromAnalytics();
 	}
 	

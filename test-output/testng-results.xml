@@ -41,20 +41,20 @@
       <![CDATA['Group by Brandname' is selected by default]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-11-11T18:22:58 IST" name="Default suite" finished-at="2025-11-11T18:23:56 IST" duration-ms="57821">
+  <suite started-at="2025-11-12T11:55:34 IST" name="Default suite" finished-at="2025-11-12T12:04:17 IST" duration-ms="522487">
     <groups>
     </groups>
-    <test started-at="2025-11-11T18:22:58 IST" name="Default test" finished-at="2025-11-11T18:23:56 IST" duration-ms="57821">
+    <test started-at="2025-11-12T11:55:34 IST" name="Default test" finished-at="2025-11-12T12:04:17 IST" duration-ms="522487">
       <class name="DashboardPayinTest.PayIn">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:22:58 IST" name="loadConfig" finished-at="2025-11-11T18:22:58 IST" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-12T11:55:34 IST" name="loadConfig" finished-at="2025-11-12T11:55:34 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:22:58 IST" name="setup" finished-at="2025-11-11T18:23:07 IST" duration-ms="9540" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-12T11:55:34 IST" name="setup" finished-at="2025-11-12T11:55:47 IST" duration-ms="12066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeInvokeBrowser()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:23:07 IST" name="beforeInvokeBrowser" finished-at="2025-11-11T18:23:14 IST" duration-ms="6299" status="PASS">
+        <test-method is-config="true" signature="beforeInvokeBrowser()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-12T11:55:47 IST" name="beforeInvokeBrowser" finished-at="2025-11-12T11:55:51 IST" duration-ms="3909" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User enter ID in Username field]]>
@@ -67,7 +67,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeInvokeBrowser -->
-        <test-method signature="verifyChartsOnAnalytics()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:23:14 IST" name="verifyChartsOnAnalytics" finished-at="2025-11-11T18:23:52 IST" duration-ms="38691" status="PASS">
+        <test-method signature="verifyChartsOnAnalytics()[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-12T11:55:51 IST" name="verifyChartsOnAnalytics" finished-at="2025-11-12T12:04:14 IST" duration-ms="503153" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Scrolled to 'Add to Chart' button]]>
@@ -101,7 +101,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyChartsOnAnalytics -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-11T18:23:52 IST" name="tearDown" finished-at="2025-11-11T18:23:56 IST" duration-ms="3016" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:DashboardPayinTest.PayIn@35beb15e]" started-at="2025-11-12T12:04:14 IST" name="tearDown" finished-at="2025-11-12T12:04:17 IST" duration-ms="3022" status="PASS">
           <params>
             <param index="0">
               <value>

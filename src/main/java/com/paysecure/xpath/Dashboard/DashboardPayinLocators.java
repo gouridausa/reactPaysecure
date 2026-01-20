@@ -90,13 +90,17 @@ public class DashboardPayinLocators {
     
     //group by - Analytics 
     public static final String groupByBrandname="(//span[text()='Group By Brand Name'])[1]";
-    public static final String groupByPSP="(//button[contains(@id,'dropdown')])[3]";
+    public static final String grpByBrndName="(//span[text()='Group By Brand Name'])[2]";
+    public static final String groupByPSP="//span[text()='Group By PSP']";
     public static final String groupByTrustScore="//span[text()='Group By Trust Score']";
     public static final String removeChartButton="//button[contains(@class,'sc-ezERC')]";
     
+    public static final String removeChart="//div[text()='Remove Chart']";
+    public static final String confirmRemoveChart="//span[text()='Confirm']";
+    public static final String cancelRemoveChart="//span[text()='Cancel']";
     
-    
-    
+
+
     
     
     
